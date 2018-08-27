@@ -45,20 +45,20 @@ public class CatalogActivity extends AppCompatActivity {
                     + cursor.getCount()
                     + "\n");
 
-            displayView.append(StoreContract.BookEntry._ID + " "
-                    + StoreContract.BookEntry.COLUMN_PRODUCT_NAME + " "
-                    + StoreContract.BookEntry.COLUMN_PRICE + " "
-                    + StoreContract.BookEntry.COLUMN_QUANTITY + " "
-                    + StoreContract.BookEntry.COLUMN_SUPPLIER_NAME + " "
+            displayView.append(StoreContract.BookEntry._ID + " | "
+                    + StoreContract.BookEntry.COLUMN_PRODUCT_NAME + " | "
+                    + StoreContract.BookEntry.COLUMN_PRICE + " | "
+                    + StoreContract.BookEntry.COLUMN_QUANTITY + " | "
+                    + StoreContract.BookEntry.COLUMN_SUPPLIER_NAME + " | "
                     + StoreContract.BookEntry.COLUMN_SUPPLIER_PHONE_NUMBER + "\n");
 
             while (cursor.moveToNext()) {
 
-                displayView.append(cursor.getInt(cursor.getColumnIndex(StoreContract.BookEntry._ID)) + " "
-                        + cursor.getString(cursor.getColumnIndex(StoreContract.BookEntry.COLUMN_PRODUCT_NAME)) + " $"
-                        + cursor.getDouble(cursor.getColumnIndex(StoreContract.BookEntry.COLUMN_PRICE)) + " "
-                        + cursor.getInt(cursor.getColumnIndex(StoreContract.BookEntry.COLUMN_QUANTITY)) + " "
-                        + cursor.getString(cursor.getColumnIndex(StoreContract.BookEntry.COLUMN_SUPPLIER_NAME)) + " "
+                displayView.append(cursor.getInt(cursor.getColumnIndex(StoreContract.BookEntry._ID)) + " | "
+                        + cursor.getString(cursor.getColumnIndex(StoreContract.BookEntry.COLUMN_PRODUCT_NAME)) + " | $"
+                        + cursor.getDouble(cursor.getColumnIndex(StoreContract.BookEntry.COLUMN_PRICE)) + " | "
+                        + cursor.getInt(cursor.getColumnIndex(StoreContract.BookEntry.COLUMN_QUANTITY)) + " | "
+                        + cursor.getString(cursor.getColumnIndex(StoreContract.BookEntry.COLUMN_SUPPLIER_NAME)) + " | "
                         + cursor.getString(cursor.getColumnIndex(StoreContract.BookEntry.COLUMN_SUPPLIER_PHONE_NUMBER))
                         + "\n");
             }
