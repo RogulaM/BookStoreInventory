@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Book Store Inventory</string>
+    <string name="app_name">Bookstore Inventory</string>
+    <string name="insert_dummy_data">Insert Dummy Data</string>
+    <string name="rows_number_text_view_message">Number of rows in database table:</string>
 </resources>
