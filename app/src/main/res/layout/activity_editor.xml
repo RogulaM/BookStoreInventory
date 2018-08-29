@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/editor_product_fields"
+            android:text="@string/product_name" />
+
+        <EditText
+            android:id="@+id/product_name_editor"
+            style="@style/edit_text_fields"
+            android:layout_weight="1"
+            android:inputType="textCapWords" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/editor_product_fields"
+            android:text="@string/product_price" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/price_sign_edit_text_fields"
+                android:text="@string/dollar_sign" />
+
+            <EditText
+                android:id="@+id/product_price_editor"
+                style="@style/price_edit_text_fields" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/editor_product_fields"
+            android:text="@string/product_quantity" />
+
+        <EditText
+            android:id="@+id/product_quantity_editor"
+            style="@style/edit_text_fields"
+            android:layout_weight="1"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/editor_product_fields"
+            android:text="@string/product_supplier_name" />
+
+        <EditText
+            android:id="@+id/product_supplier_name_editor"
+            style="@style/edit_text_fields"
+            android:layout_weight="1"
+            android:inputType="textCapWords" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/editor_product_fields"
+            android:text="@string/product_supplier_phone_number" />
+
+        <EditText
+            android:id="@+id/product_supplier_phone_number_editor"
+            style="@style/edit_text_fields"
+            android:layout_weight="1"
+            android:inputType="phone" />
+    </LinearLayout>
+</LinearLayout>
